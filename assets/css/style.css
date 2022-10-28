@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    /* background: #000000f2; */
+}
+
+.loading-inner {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.w-85 {
+    width: 90% !important;
+}
+
+.main-loading {
+    inset: 0;
+    z-index: 9999999999;
+    background-color: #000;
+    display: flex;
+}
+
+@media (max-width: 767.98px) {
+    main {
+        margin-left: 4.5rem !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    main {
+        margin-left: 3.5rem !important;
+    }
+}
+
+.sidebar .right-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 999;
+    background-color: #f8f6f6;
+    text-align: center;
+    transition: all 0.6s ease;
+}
+
+.sidebar .right-nav .logo {
+    padding: 25px 0;
+}
+
+.sidebar .right-nav .logo img {
+    height: 48px;
+}
+
+.sidebar .right-nav .toggel-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sidebar .right-nav .toggel-menu svg {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.sidebar .right-nav .social-icon {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.sidebar .menu-bar {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    z-index: 5555;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: all 0.6s ease;
+}
+
+.sidebar .menu-bar.open-menu {
+    transform: scale(1);
+}
+
+.sidebar .menu-bar.close-menu {
+    transform: translateX(-100%);
+}
+
+.sidebar .menu-bar .nav-item ul {
+    list-style: none;
+}
+
+.sidebar .menu-bar .nav-item ul li {
+    display: list-item;
+    padding-top: 25px;
+}
+
+.sidebar .menu-bar .nav-item ul li a {
+    color: #f9f6f6;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sidebar .menu-bar .nav-footer {
+    position: absolute;
+    bottom: 50px;
+    padding: 2rem;
+    color: #999;
+}
+
+.sidebar .menu-bar .nav-footer .footer-social-item a {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+.post-box {
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.post-box .post-layer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .7);
+    transition: all 0.6s ease;
+    color: #000;
+}
+
+.post-box:hover .post-layer {
+    top: 0;
+}

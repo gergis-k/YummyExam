@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <!-- icon -->
+    <link rel="icon" href="assets/imgs/logo.png">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="main-loading position-fixed justify-content-center align-items-center">
+        <i class="fa fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+
+    <nav class="sidebar">
+        <header class="right-nav">
+            <div class="logo">
+                <img src="assets/imgs/logo.png" alt="logo">
+            </div>
+            <div id="btn-nav" class="toggel-menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="social-icon">
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </header>
+        <div class="menu-bar close-menu">
+            <div class="nav-item">
+                <ul>
+                    <li>
+                        <a data-target="search" class="nav-category">Search</a>
+                    </li>
+                    <li>
+                        <a data-target="categories" class="nav-category">Categories</a>
+                    </li>
+                    <li>
+                        <a data-target="a" class="nav-category">Area</a>
+                    </li>
+                    <li>
+                        <a data-target="i" class="nav-category">Ingredients</a>
+                    </li>
+                    <li>
+                        <a data-target="contact" class="nav-category">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="footer-social-item">
+                    <a><i class="fa-brands fa-facebook-f"></i></a>
+                    <a><i class="fa-brands fa-twitter"></i></a>
+                    <a><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <div class="my-3">
+                    <p>Copyright Gergis Adel© 2022 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-5">
+        <div class="container">
+
+
+            <div class="row">
+                <div id="search-box" class="col-12 text-center">
+
+                </div>
+            </div>
+
+
+            <div id="search-res" class="row">
+            </div>
+
+
+            <div class="container py-5 w-85 me-auto">
+
+                <div class="loading-inner">
+                    <div class="loading">
+                        <i class="fa fa-spinner fa-spin fa-4x"></i>
+                    </div>
+                </div>
+
+                <div id="row-data" class="row g-5">
+
+                    <!-- <div class="col-md-6 col-lg-3">
+                        <div class="position-relative shadow rounded post-box">
+                            <div class="post">
+                                <img src="https://www.themealdb.com/images/media/meals/58oia61564916529.jpg"
+                                    class="w-100 rounded">
+                                <div class="post-layer d-flex align-items-center">
+                                    <div class="info p-2">
+                                        <h2>Corba</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src=" node_modules/jquery/dist/jquery.min.js">
+    </script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="assets/fontawesome-free-6.2.0-web/js/all.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
